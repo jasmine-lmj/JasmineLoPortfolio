@@ -285,6 +285,19 @@ html {
   text-align: center;
 }
 
+h1,
+h2 {
+  font-family: "Carter One";
+}
+
+h3 {
+  font-family: "Skranji";
+}
+
+p {
+  font-family: "Amiko";
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -298,6 +311,29 @@ ul {
   padding: 0;
 }
 
+li,
+footer,
+button,
+label {
+  font-family: "Amiko";
+}
+
+li,
+footer,
+button {
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  background-color: bisque;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+header {
+  background-color: #FFA9A3;
+}
+
 .navContainer {
   width: 20%;
   margin: 0 auto;
@@ -307,4 +343,16 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+h1 {
+  padding-top: 10rem;
+}
+
+.skills {
+  background-color: #E6EBE0;
+}
+
+.contact {
+  background-color: #F4F1BB;
 }
