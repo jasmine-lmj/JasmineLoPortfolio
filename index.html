@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Carter+One&family=Lora:ital@0;1&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>Jasmine Lo</title>
 </head>
 <body>
@@ -30,21 +31,47 @@
         </div>
     </header>
     <main>
-        <section id="aboutMe" class="wrapper aboutMe">
-            <h2>about me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque ducimus animi at praesentium placeat ea non mollitia quidem ipsum! Quisquam totam tempora impedit consectetur? Voluptatum numquam recusandae tempora praesentium?</p>
+        <section id="aboutMe" class="aboutMe">
+            <div class="wrapper bioContainer">
+                <h2>about me</h2>
+                <div class="imgContainer">
+                    <img src="./assets/profilePic.JPG" alt="picture of jasmine">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt atque ducimus animi at praesentium placeat ea non mollitia quidem ipsum! Quisquam totam tempora impedit consectetur? Voluptatum numquam recusandae tempora praesentium?</p>
+            </div>
         </section>
         <section class="skills">
             <div class="wrapper">
                 <h2>skills</h2>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SASS</li>
-                    <li>Javascript</li>
-                    <li>react</li>
-                    <li>Github/Git</li>
-                    <li>Firebase</li>
+                    <li class="skillIcon">
+                        <i class="devicon-html5-plain"></i>
+                        <p>HTML</p>
+                    </li>
+                    <li class="skillIcon">
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li class="skillIcon">
+                        <i class="devicon-sass-original"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li class="skillIcon">
+                        <i class="devicon-javascript-plain"></i>
+                        <p>Javascript</p> 
+                    </li>
+                    <li class="skillIcon">
+                        <i class="devicon-react-original"></i>
+                        <p>React</p> 
+                    </li>
+                    <li class="skillIcon">
+                        <i class="devicon-github-original"></i>
+                        <p>Github/Git</p> 
+                    </li>
+                    <li class="skillIcon">
+                        <i class="devicon-firebase-plain"></i>
+                        <p>Firebase</p> 
+                    </li>
                 </ul>
             </div>
         </section>

@@ -385,12 +385,21 @@ header .title {
   padding-bottom: 4rem;
 }
 
-.skills {
-  background-color: #E6EBE0;
-}
-
 .contact {
   background-color: #C2948A;
+}
+
+.aboutMe {
+  background-color: #E6EBE0;
+}
+.aboutMe h2 {
+  color: #F38779;
+}
+.aboutMe img {
+  border-radius: 50%;
+  width: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects {
