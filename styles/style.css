@@ -385,6 +385,18 @@ header .title {
   padding-bottom: 4rem;
 }
 
+.skillList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.skillList i {
+  font-size: 4rem;
+}
+
 .contact {
   background-color: #C2948A;
 }
