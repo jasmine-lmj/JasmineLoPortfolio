@@ -417,6 +417,9 @@ header .title {
 .projects {
   background-color: #F6F0ED;
 }
+.projects .projectImgContainer img {
+  width: 30%;
+}
 
 footer {
   background-color: #28536b;
