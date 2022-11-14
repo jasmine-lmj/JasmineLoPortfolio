@@ -265,8 +265,9 @@ html {
 }
 
 .skipLink {
-    background-color: white;
-    color: black;
+    background-color: #E76345;
+    color: white;
+    font-family: "Amiko";
     font-size: 1rem;
     padding: 10px 0;
     position: absolute;
@@ -281,3 +282,8 @@ html {
     }
 
 }   
+
+section {
+    padding-top:2rem;
+    padding-bottom: 3rem;
+}

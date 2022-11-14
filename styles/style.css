@@ -270,8 +270,9 @@ html {
 }
 
 .skipLink {
-  background-color: white;
-  color: black;
+  background-color: #E76345;
+  color: white;
+  font-family: "Amiko";
   font-size: 1rem;
   padding: 10px 0;
   position: absolute;
@@ -285,17 +286,38 @@ html {
   text-align: center;
 }
 
+section {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
 h1,
 h2 {
   font-family: "Carter One";
 }
 
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
 h3 {
   font-family: "Skranji";
+  font-size: 30px;
 }
 
 p {
   font-family: "Amiko";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapper {
@@ -326,16 +348,30 @@ button {
 
 button {
   border: none;
-  background-color: bisque;
+  background-color: #C25F2E;
+  color: white;
   padding: 15px 20px;
   cursor: pointer;
 }
 header {
-  background-color: #FFA9A3;
+  background-color: #28536b;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  height: 60vh;
 }
-
-.navContainer {
-  width: 20%;
+header h1 {
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+header h1,
+header h3 {
+  color: antiquewhite;
+}
+header nav {
+  color: antiquewhite;
+}
+header .navContainer {
+  width: 30%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,9 +380,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-h1 {
-  padding-top: 10rem;
+header .title {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 .skills {
@@ -354,5 +390,16 @@ h1 {
 }
 
 .contact {
-  background-color: #F4F1BB;
+  background-color: #C2948A;
+}
+
+.projects {
+  background-color: #F6F0ED;
+}
+
+footer {
+  background-color: #28536b;
+  color: antiquewhite;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
