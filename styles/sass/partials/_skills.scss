@@ -1,10 +1,10 @@
-.skillList{
-    display: flex;
-    justify-content: space-between;
-    
-    
-    
-    i{
-        font-size:4rem;
+.skills{
+    background-color: #7ea8be;
+    .skillList{
+        display: flex;
+        justify-content: space-between;
+        i{
+            font-size:4rem;
+        }
     }
 }
