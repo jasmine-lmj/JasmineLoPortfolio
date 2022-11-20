@@ -389,7 +389,10 @@ header .title {
   padding-bottom: 4rem;
 }
 
-.skillList {
+.skills {
+  background-color: #7ea8be;
+}
+.skills .skillList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +400,7 @@ header .title {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.skillList i {
+.skills .skillList i {
   font-size: 4rem;
 }
 
