@@ -351,7 +351,8 @@ button {
   font-weight: 600;
 }
 
-button {
+button,
+.formSubmit {
   border: none;
   background-color: #C25F2E;
   color: white;
@@ -369,9 +370,7 @@ header h1 {
   margin-bottom: 0;
 }
 header h1,
-header h3 {
-  color: antiquewhite;
-}
+header h3,
 header nav {
   color: antiquewhite;
 }
@@ -404,6 +403,67 @@ header .title {
 
 .contact {
   background-color: #C2948A;
+}
+.contact .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .socials .social {
+  font-size: 1.5rem;
+  color: #28536b;
+  padding: 1rem;
+}
+.contact .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact h2 {
+  color: antiquewhite;
+  margin-bottom: 0;
+}
+.contact .message {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contact .form label {
+  font-family: "Amiko";
+}
+.contact .form input {
+  margin-bottom: 0.5rem;
+}
+.contact .form .textArea {
+  resize: none;
+}
+.contact .form .formSubmit {
+  width: 25%;
+  margin: 1rem auto;
 }
 
 .aboutMe {
