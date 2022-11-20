@@ -1,0 +1,41 @@
+.wrapper{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+footer,
+button,
+label {
+    font-family: "Amiko"
+}
+
+li,
+footer,
+button {
+    font-weight: 600;
+    ;
+}
+
+button,
+.formSubmit{
+    border: none;
+    background-color: #C25F2E;
+    color:white;
+    padding:15px 20px;
+    cursor:pointer;
+
+    &:hover,
+    &:focus {
+    // some color change
+    }
+}
+
