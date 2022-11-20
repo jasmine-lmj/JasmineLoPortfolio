@@ -7,7 +7,7 @@ h1{
     font-size: 90px;
 }
 h2{
-font-size:40px;
+font-size:50px;
 }
 
 h3{
@@ -15,11 +15,14 @@ font-family: "Skranji";
 font-size:30px;
 }
 
-
+h4,
 p{
-font-family:"Amiko"
+    font-family: "Amiko";
 }
 
+h4{
+    text-transform: uppercase;
+}
 
 a {
     text-decoration: none;

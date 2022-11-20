@@ -1,10 +1,39 @@
 .projects{
     background-color: #F6F0ED;
-
-    .projectImgContainer{
     
-        img{
-            width:30%;
+    
+    h2{
+        padding-bottom: 2rem;
+    }
+
+    .project{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom:5rem;
+        margin-top:1rem;
+
+        .projectImgContainer{
+            width:48%;
+            img {
+                    width: 100%;
+                }
+        }
+        .projectDetails{
+            width:48%;
+            text-align: left;
         }
     }
+
+    .project2{
+        .projectDetails{
+            text-align: right;
+        }
+    }
+    h3{
+        margin-bottom: 0.5rem;
+    }
+    h4{
+        margin-top: 0;
+    }
+    
 }
