@@ -13,6 +13,10 @@ header{
     color:antiquewhite;
     }
 
+    a {
+        font-size: 1.5rem;
+    }
+
     .home{
         display:flex;
         flex-direction: column;
@@ -24,10 +28,6 @@ header{
     margin:0 auto;
     display:flex;
     justify-content: space-between;
-    
-    a{
-        font-size:1.5rem;
-    }
     }
 
     .title{
@@ -39,10 +39,7 @@ header{
         .titleButton{
             align-self: center;
         }
-    }
-
-    
-    
+    } 
 }
 
 

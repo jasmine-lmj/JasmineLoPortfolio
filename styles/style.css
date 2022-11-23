@@ -371,6 +371,9 @@ header h3,
 header nav {
   color: antiquewhite;
 }
+header a {
+  font-size: 1.5rem;
+}
 header .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,9 +395,6 @@ header .navContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-header .navContainer a {
-  font-size: 1.5rem;
 }
 header .title {
   height: 100vh;
@@ -506,6 +506,10 @@ header .title .titleButton {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.aboutMe p {
+  width: 60%;
+  margin: 1rem auto;
+}
 .aboutMe .linkToContact {
   font-family: "skranji";
   color: #28536b;
@@ -554,7 +558,3 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
