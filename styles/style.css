@@ -297,16 +297,16 @@ h2 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 7rem;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 h3 {
   font-family: "Skranji";
-  font-size: 30px;
+  font-size: 4rem;
 }
 
 h4,
@@ -362,11 +362,8 @@ button,
 header {
   background-color: #28536b;
   padding-top: 2rem;
-  padding-bottom: 3rem;
-  height: 60vh;
 }
 header h1 {
-  padding-top: 3rem;
   margin-bottom: 0;
 }
 header h1,
@@ -374,8 +371,20 @@ header h3,
 header nav {
   color: antiquewhite;
 }
+header .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 header .navContainer {
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,9 +393,25 @@ header .navContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header .navContainer a {
+  font-size: 1.5rem;
+}
 header .title {
-  padding-top: 5rem;
-  padding-bottom: 4rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .title .titleButton {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .skills {
@@ -529,3 +554,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
