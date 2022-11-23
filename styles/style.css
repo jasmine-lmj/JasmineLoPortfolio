@@ -481,6 +481,11 @@ header .title {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.aboutMe .linkToContact {
+  font-family: "skranji";
+  color: #28536b;
+  font-size: 1.2rem;
+}
 
 .projects {
   background-color: #F6F0ED;
