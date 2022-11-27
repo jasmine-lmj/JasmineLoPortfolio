@@ -9,21 +9,21 @@
 
 // 768*1024
 @media (max-width: 768px) {
+    h2{
+        margin: 1rem 0;
+    }
     header{
         .navContainer{
             width:80%;
         }
         .title{
-            height:70vh;
+            height:60vh;
             h1{
             margin-top: 0;
             }
         }   
     }
     .aboutMe{
-        h2{
-            margin:2rem;
-        }
         img{
             width:20%;
         }
@@ -31,7 +31,9 @@
             width:90%;
         }
     }
+    
     .projects{
+        
         .project{
             h3{
                 margin-top:2rem;
@@ -51,7 +53,18 @@
         .project2{
             flex-direction: column-reverse;
         }
+        .project3{
+            margin-bottom:0.5rem;
+        }
     }
+    .contact{
+        .contactContainer{
+            p,
+            .form{
+                width:80%;
+            }
+        }
+    } 
 }    
 
 @media (max-width: 480px) {}
