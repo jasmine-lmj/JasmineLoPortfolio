@@ -529,6 +529,9 @@ header .title .titleButton {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 5rem;
   margin-top: 1rem;
 }
@@ -557,4 +560,53 @@ footer {
   color: antiquewhite;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  header .navContainer {
+    width: 80%;
+  }
+  header .title {
+    height: 70vh;
+  }
+  header .title h1 {
+    margin-top: 0;
+  }
+  .aboutMe h2 {
+    margin: 2rem;
+  }
+  .aboutMe img {
+    width: 20%;
+  }
+  .aboutMe p {
+    width: 90%;
+  }
+  .projects .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .project h3 {
+    margin-top: 2rem;
+  }
+  .projects .project .projectImgContainer,
+.projects .project .projectDetails {
+    width: 80%;
+  }
+  .projects .project .projectDetails {
+    text-align: center;
+  }
+  .projects .project2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
