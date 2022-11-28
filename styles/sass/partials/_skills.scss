@@ -1,13 +1,14 @@
 .skills{
-    background-color: #DE9378;
+    background-color: hsl(189, 33%, 92%);
     h2 {
-            color: #F6F0ED;
+            color: #212E4E;
         }
     .skillList{
         display: flex;
         justify-content: space-between;
         i{
             font-size:4rem;
+            color:hwb(18 7% 24%);
         }
     }
 }

@@ -354,8 +354,8 @@ button {
 button,
 .formSubmit {
   border: none;
-  background-color: #C25F2E;
-  color: white;
+  background-color: hwb(18 7% 24%);
+  color: antiquewhite;
   padding: 15px 20px;
   cursor: pointer;
 }
@@ -415,10 +415,10 @@ header .title .titleButton {
 }
 
 .skills {
-  background-color: #DE9378;
+  background-color: hsl(189deg, 33%, 92%);
 }
 .skills h2 {
-  color: #F6F0ED;
+  color: #212E4E;
 }
 .skills .skillList {
   display: -webkit-box;
@@ -430,16 +430,17 @@ header .title .titleButton {
 }
 .skills .skillList i {
   font-size: 4rem;
+  color: hwb(18 7% 24%);
 }
 
 .contact {
-  background-color: hwb(357 30% 24%);
+  background-color: #E6EBE0;
 }
 .contact .social,
 .contact h2,
 .contact p,
 .contact label {
-  color: antiquewhite;
+  color: #28536b;
 }
 .contact .socials {
   display: -webkit-box;
@@ -452,6 +453,7 @@ header .title .titleButton {
 .contact .socials .social {
   font-size: 1.5rem;
   padding: 1rem;
+  color: hwb(18 7% 24%);
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -499,7 +501,6 @@ header .title .titleButton {
 .contact .form .formSubmit {
   width: 25%;
   margin: 1rem auto;
-  background-color: #2F4568;
   color: antiquewhite;
 }
 
