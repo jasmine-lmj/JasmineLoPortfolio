@@ -415,7 +415,10 @@ header .title .titleButton {
 }
 
 .skills {
-  background-color: #7ea8be;
+  background-color: #DE9378;
+}
+.skills h2 {
+  color: #F6F0ED;
 }
 .skills .skillList {
   display: -webkit-box;
@@ -430,7 +433,13 @@ header .title .titleButton {
 }
 
 .contact {
-  background-color: #C2948A;
+  background-color: hwb(357 30% 24%);
+}
+.contact .social,
+.contact h2,
+.contact p,
+.contact label {
+  color: antiquewhite;
 }
 .contact .socials {
   display: -webkit-box;
@@ -442,7 +451,6 @@ header .title .titleButton {
 }
 .contact .socials .social {
   font-size: 1.5rem;
-  color: #28536b;
   padding: 1rem;
 }
 .contact .contactContainer {
@@ -458,7 +466,6 @@ header .title .titleButton {
           align-items: center;
 }
 .contact h2 {
-  color: antiquewhite;
   margin-bottom: 0;
 }
 .contact .message {
@@ -492,6 +499,8 @@ header .title .titleButton {
 .contact .form .formSubmit {
   width: 25%;
   margin: 1rem auto;
+  background-color: #2F4568;
+  color: antiquewhite;
 }
 
 .aboutMe {
@@ -507,7 +516,7 @@ header .title .titleButton {
      object-fit: cover;
 }
 .aboutMe p {
-  width: 60%;
+  width: 80%;
   margin: 1rem auto;
 }
 .aboutMe .linkToContact {
@@ -520,6 +529,7 @@ header .title .titleButton {
   background-color: #F6F0ED;
 }
 .projects h2 {
+  color: #2F4568;
   padding-bottom: 2rem;
 }
 .projects .project {

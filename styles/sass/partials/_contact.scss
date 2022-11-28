@@ -1,11 +1,19 @@
+
+
 .contact{
-    background-color: #C2948A;
+    background-color: hwb(357 30% 24%);
+    .social,
+    h2,
+    p,
+    label{
+        color: antiquewhite;
+    }
+
     .socials{
         display: flex;
         justify-content: space-between;
         .social{
-            font-size: 1.5rem;
-            color: #28536b;
+            font-size: 1.5rem;           
             padding:1rem;
         }
     }
@@ -17,7 +25,6 @@
     }
 
     h2{
-        color:antiquewhite;
         margin-bottom: 0;
     }
     .message{
@@ -44,7 +51,9 @@
 
         .formSubmit{
             width:25%;
-            margin:1rem auto;
+            margin:1rem auto; 
+            background-color:#2F4568; 
+            color: antiquewhite;
         }
     }
 }
