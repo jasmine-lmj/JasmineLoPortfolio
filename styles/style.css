@@ -297,16 +297,16 @@ h2 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 7rem;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 h3 {
   font-family: "Skranji";
-  font-size: 30px;
+  font-size: 4rem;
 }
 
 h4,
@@ -354,19 +354,16 @@ button {
 button,
 .formSubmit {
   border: none;
-  background-color: #C25F2E;
-  color: white;
+  background-color: #c24712;
+  color: antiquewhite;
   padding: 15px 20px;
   cursor: pointer;
 }
 header {
   background-color: #28536b;
   padding-top: 2rem;
-  padding-bottom: 3rem;
-  height: 60vh;
 }
 header h1 {
-  padding-top: 3rem;
   margin-bottom: 0;
 }
 header h1,
@@ -374,8 +371,23 @@ header h3,
 header nav {
   color: antiquewhite;
 }
+header a {
+  font-size: 1.5rem;
+}
+header .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 header .navContainer {
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,12 +397,28 @@ header .navContainer {
           justify-content: space-between;
 }
 header .title {
-  padding-top: 5rem;
-  padding-bottom: 4rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .title .titleButton {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .skills {
-  background-color: #7ea8be;
+  background-color: hsl(189deg, 33%, 92%);
+}
+.skills h2 {
+  color: #212E4E;
 }
 .skills .skillList {
   display: -webkit-box;
@@ -402,10 +430,17 @@ header .title {
 }
 .skills .skillList i {
   font-size: 4rem;
+  color: hwb(18 7% 24%);
 }
 
 .contact {
-  background-color: #C2948A;
+  background-color: #E6EBE0;
+}
+.contact .social,
+.contact h2,
+.contact p,
+.contact label {
+  color: #28536b;
 }
 .contact .socials {
   display: -webkit-box;
@@ -417,8 +452,8 @@ header .title {
 }
 .contact .socials .social {
   font-size: 1.5rem;
-  color: #28536b;
   padding: 1rem;
+  color: hwb(18 7% 24%);
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -433,7 +468,6 @@ header .title {
           align-items: center;
 }
 .contact h2 {
-  color: antiquewhite;
   margin-bottom: 0;
 }
 .contact .message {
@@ -467,6 +501,7 @@ header .title {
 .contact .form .formSubmit {
   width: 25%;
   margin: 1rem auto;
+  color: antiquewhite;
 }
 
 .aboutMe {
@@ -481,11 +516,21 @@ header .title {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.aboutMe p {
+  width: 80%;
+  margin: 1rem auto;
+}
+.aboutMe .linkToContact {
+  font-family: "skranji";
+  color: #28536b;
+  font-size: 1.2rem;
+}
 
 .projects {
   background-color: #F6F0ED;
 }
 .projects h2 {
+  color: #2F4568;
   padding-bottom: 2rem;
 }
 .projects .project {
@@ -495,6 +540,9 @@ header .title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 5rem;
   margin-top: 1rem;
 }
@@ -523,4 +571,183 @@ footer {
   color: antiquewhite;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 896px) {
+  header .title h1,
+header .title h3 {
+    margin-top: 0;
+  }
+  .projects h2 {
+    margin: 0;
+  }
+}
+@media (max-width: 890px) {
+  header .navContainer {
+    width: 80%;
+  }
+  header .title h1 {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    margin: 1rem 0;
+  }
+  header .navContainer {
+    width: 80%;
+  }
+  header .title {
+    height: 100vh;
+  }
+  header .title h1 {
+    margin-top: 2rem;
+  }
+  .aboutMe img {
+    width: 20%;
+  }
+  .aboutMe p {
+    width: 90%;
+  }
+  .projects .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .project h3 {
+    margin-top: 2rem;
+  }
+  .projects .project .projectImgContainer,
+.projects .project .projectDetails {
+    width: 80%;
+  }
+  .projects .project .projectDetails {
+    text-align: center;
+  }
+  .projects .project2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projects .project3 {
+    margin-bottom: 0.5rem;
+  }
+  .contact .contactContainer p,
+.contact .contactContainer .form {
+    width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .skills .skillContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skillList {
+    margin-top: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skillList .skillIcon {
+    width: 24%;
+  }
+  .skills .skillList i {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  header .navContainer a {
+    font-size: 1.3rem;
+  }
+  header .title {
+    height: 100vh;
+  }
+  .skills .skillContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skillList {
+    margin-top: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skillList .skillIcon {
+    width: 24%;
+  }
+  .skills .skillList i {
+    font-size: 3rem;
+  }
+  .contact .contactContainer .form {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  header .navContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  header .navContainer {
+    width: 100%;
+  }
 }

@@ -1,32 +1,42 @@
 header{
     background-color: #28536b;
     padding-top: 2rem;
-    padding-bottom: 3rem;
-    height:60vh;
-    
     h1{
-    padding-top:3rem;
     margin-bottom:0;
     }
-    
     h1,
     h3,
     nav{
     color:antiquewhite;
     }
-     
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .home{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .navContainer{
-    width:30%;
+    width:50%;
     margin:0 auto;
     display:flex;
     justify-content: space-between;
     }
 
-
     .title{
-        padding-top: 5rem;
-        padding-bottom: 4rem;
-    }
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .titleButton{
+            align-self: center;
+        }
+    } 
 }
 
 
