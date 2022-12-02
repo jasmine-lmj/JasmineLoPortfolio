@@ -11,20 +11,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Carter+One&family=Lora:ital@0;1&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png" />
-
+    <script src="./script.js"></script>
     <title>Jasmine Lo</title>
 </head>
+
 <body>
     <a href="#aboutMe" class="skipLink">Skip to the main content.</a>
     <header>
         <div id="home" class="wrapper home">
             <nav>
+                <div class="menuIcon hamburger">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </div>
                 <ul class="navContainer">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#aboutMe">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="slideOutNav">
+                    <button id="menuClose">
+                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="m18 6-12 12" />
+                                <path d="m6 6 12 12" />
+                            </g>
+                        </svg>
+                    </button>
+                    <ul class="slideUl">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="title">
                 <h1>jasmine lo</h1>

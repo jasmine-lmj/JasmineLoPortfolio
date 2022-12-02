@@ -363,6 +363,13 @@ button,
   padding: 15px 20px;
   cursor: pointer;
 }
+button:hover, button:focus,
+.formSubmit:hover,
+.formSubmit:focus {
+  background-color: #E94A35;
+  color: #F4F1BB;
+}
+
 header {
   background-color: #28536b;
   padding-top: 2rem;
@@ -386,9 +393,9 @@ header .home {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+header .menuIcon {
+  display: none;
 }
 header .navContainer {
   width: 70%;
@@ -399,6 +406,9 @@ header .navContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .slideOutNav {
+  display: none;
 }
 header .title {
   min-height: 100vh;
@@ -445,7 +455,7 @@ header .title .titleButton {
 }
 
 .contact {
-  background-color: #E6EBE0;
+  background-color: #F1F3EC;
 }
 .contact .social,
 .contact h2,
@@ -464,7 +474,7 @@ header .title .titleButton {
 .contact .socials .social {
   font-size: 1.5rem;
   padding: 1rem;
-  color: hwb(18 7% 24%);
+  color: #c24712;
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -516,7 +526,7 @@ header .title .titleButton {
 }
 
 .aboutMe {
-  background-color: #E6EBE0;
+  background-color: #F1F3EC;
 }
 .aboutMe h2 {
   color: #F38779;
@@ -585,6 +595,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header .navContainer {
+    width: 100%;
+  }
   .projects .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -619,5 +632,60 @@ footer {
   .contact .contactContainer p,
 .contact .contactContainer .form {
     width: 80%;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  header .menuIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: 2.5rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .slideOutNav {
+    background-color: #F1F3EC;
+    color: #28536b;
+    height: 30vh;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    width: 20%;
+    max-width: 200px;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 20;
+    right: -250px;
+    top: -250px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .slideOutNav.open {
+    top: 0;
+    right: 0;
+  }
+  header .navContainer {
+    display: none;
+  }
+  header .title {
+    min-height: 80vh;
   }
 }

@@ -17,16 +17,23 @@ header{
     .home{
         display:flex;
         flex-direction: column;
-        justify-content: space-between;
+    }
+
+    .menuIcon{
+        display:none;
     }
 
     .navContainer{
-    width:70%;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-between;
+        width:70%;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
     }
 
+    .slideOutNav{
+        display:none;
+        
+    }    
     .title{
         min-height:100vh;
         display:flex;
@@ -36,8 +43,9 @@ header{
         .titleButton{
             align-self: center;
         }
-    } 
-}
+    }     
+}   
+
 
 
 

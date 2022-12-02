@@ -1,8 +1,11 @@
-
- // 768*1024
+// 768*1024
 @media (max-width: 768px) {
+    header{
+        .navContainer{
+            width:100%;
+        }
+    }
     .projects{
-        
         .project{
             h3{
                 margin-top:2rem;
@@ -36,114 +39,55 @@
     } 
 }    
 
-// @media (max-width: 660px){
-//     .skills {
-//             .skillContainer {
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//             }
-    
-//             .skillList {
-//                 margin-top: 2rem;
-//                 flex-wrap: wrap;
-//                 align-items: center;
-    
-//                 .skillIcon {
-//                     width: 24%;
-//                 }
-    
-//                 i {
-//                     font-size: 4rem;
-//                 }
-//             }
-//         }
-// }
 
-// @media(max-width:640px){
-//     h1 {
-//             font-size: 5rem;
-//         }
-//     h2 {
-//         font-size: 4rem;
-//     }
+@media(max-width:640px){
+    h1 {
+            font-size: 5rem;
+        }
+    h2 {
+        font-size: 4rem;
+    }
 
-//     h3 {
-//         font-size: 3rem;
-//     }
-// }
-// // 480*854
-// @media (max-width: 480px) {
-//     h1{
-//         font-size: 5rem;
-//     }
-//     h2{
-//         font-size:4rem;
-//     }
-//     h3 {
-//         font-size: 3rem;
-//     }
-//     header {
-//         .navContainer {
-//             a{
-//                 font-size: 1.3rem;
-//             }
-//         }
-//         .title {
-//             height: 100vh;
-//         }
-//     }
-//     .skills{    
-//         .skillContainer{
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//         }    
-//         .skillList{
-//             margin-top:2rem;
-//             flex-wrap: wrap;
-//             align-items: center;
-//             .skillIcon{
-//                 width:24%;
-//             }
-//             i{
-//                 font-size:3rem;
-//             }
-//         }
-//     }
+    h3 {
+        font-size: 3rem;
+    }
 
-//     .contact{
-//         .contactContainer{
-//             .form{
-//                 width:100%;
-//             }
-//         }       
-//     }
-// }
+    header{
+        .menuIcon{
+            display:flex;
+            background-color: transparent;
+            color:antiquewhite;
+            font-size: 2.5rem;
+            justify-content: flex-end;
+        }
+        .slideOutNav {
+            background-color: #F1F3EC;
+            color: #28536b;
+            height: 30vh;
+            position: fixed;
+            top: 0;
+            padding: 20px;
+            width: 20%;
+            max-width: 200px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            z-index: 20;
+            right:-250px;
+            top: -250px;
+            transition: 0.3s;
 
-// @media(max-width:440px){
-//     h1 {
-//             font-size: 4rem;
-//     }
-//     h2 {
-//         font-size: 3rem;
-//     }
-//     h3 {
-//         font-size: 2rem;
-//     }
-// }
-// @media(max-width:414px) {
-//     header {
-//             .navContainer {
-//                 width: 100%;
-//             }
-//         }
-// }
-
-// @media(max-width:375px){
-//     header {
-//         .navContainer {
-//             width: 100%;
-//         }
-//     }
-// }
+            // this is for js , to show the slideOutNav
+            &.open {
+                top: 0;
+                right:0;
+            }
+        }
+        .navContainer{
+            display:none;
+        }
+        .title{
+            min-height: 80vh;
+        }
+    }
+}
