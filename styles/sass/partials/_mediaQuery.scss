@@ -5,6 +5,11 @@
             width:100%;
         }
     }
+    .aboutMe{
+        img{
+            width: 30%;
+        }
+    }
     .projects{
         .project{
             h3{
@@ -113,4 +118,24 @@
             min-height: 80vh;
         }
     }
+}
+
+@media(max-width:460px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+    font-size: 3rem;
+    }
+
+    h3 {
+    font-size: 2rem;
+    }
+    header{
+        .title{
+            min-height: 70vh;
+        }
+    }
+    
 }

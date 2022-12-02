@@ -527,8 +527,8 @@ header .title .titleButton {
 .contact .form input:focus, .contact .form input:hover,
 .contact .form .textArea:focus,
 .contact .form .textArea:hover {
-  -webkit-box-shadow: 0 0 5px #c24712;
-          box-shadow: 0 0 5px #c24712;
+  -webkit-box-shadow: 0 0 5px #e85415;
+          box-shadow: 0 0 5px #e85415;
 }
 .contact .form .formSubmit {
   width: 25%;
@@ -608,6 +608,9 @@ footer {
 @media (max-width: 768px) {
   header .navContainer {
     width: 100%;
+  }
+  .aboutMe img {
+    width: 30%;
   }
   .projects .project {
     -webkit-box-orient: vertical;
@@ -732,5 +735,19 @@ footer {
   }
   header .title {
     min-height: 80vh;
+  }
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  header .title {
+    min-height: 70vh;
   }
 }
