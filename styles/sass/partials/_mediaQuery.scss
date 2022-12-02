@@ -64,6 +64,7 @@
 
         .slideOutNav {
             background-color: #F1F3EC;
+            opacity: 85%;
             color: #28536b;
             height: 25vh;
             position: fixed;
@@ -75,7 +76,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            z-index: 20;
+            z-index: 100;
             transition: 0.2s;
             
 

@@ -42,12 +42,25 @@
         
         label{
             font-family: "Amiko";
+            
+        
         }
         input{
             margin-bottom: 0.5rem;
-        }        
+        }
+
         .textArea{
-            resize: none;
+            resize: none;  
+        }
+
+        input,
+        .textArea{
+            border:none;
+            outline:none;
+            &:focus,
+            &:hover{
+            box-shadow: 0 0 5px #c24712;
+            }
         }
 
         .formSubmit{
