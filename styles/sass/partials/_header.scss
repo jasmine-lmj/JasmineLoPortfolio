@@ -17,18 +17,26 @@ header{
     .home{
         display:flex;
         flex-direction: column;
-        justify-content: space-between;
+
+    }
+
+    .hamburger{
+        display:none;
     }
 
     .navContainer{
-    width:50%;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-between;
+        width:70%;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
     }
 
+    .slideOutNav{
+        display:none;
+        
+    }    
     .title{
-        height:100vh;
+        min-height:100vh;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -36,8 +44,9 @@ header{
         .titleButton{
             align-self: center;
         }
-    } 
-}
+    }     
+}   
+
 
 
 

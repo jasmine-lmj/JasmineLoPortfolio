@@ -11,20 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Carter+One&family=Lora:ital@0;1&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png" />
-
+    <script src="./script.js"></script>
     <title>Jasmine Lo</title>
 </head>
+
 <body>
     <a href="#aboutMe" class="skipLink">Skip to the main content.</a>
     <header>
         <div id="home" class="wrapper home">
-            <nav>
+            <nav class="navBar">
                 <ul class="navContainer">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#aboutMe">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="slideOutNav">
+                    <button id="menuClose" class="menuClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="slideUl">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="title">
                 <h1>jasmine lo</h1>
@@ -95,7 +110,7 @@
                     </div>
                     <div class="projectDetails">
                         <h3>Delicious</h3>
-                        <h4>HTML, CSS, Sass </h4>
+                        <h4>HTML, CSS </h4>
                         <p>Multi-page PSD conversion, fully responsive across all devices. This restaurant website is well-tested, pixel perfect based on client brief and design guide. </p>
                         <button><a href="https://jasminelo-delicious.netlify.app/" target=”_blank” >view live</a> </button>
                         <button><a href="https://github.com/jasmine-lmj/project1_delicious" target=”_blank” >view code</a> </button>
@@ -120,7 +135,7 @@
                     </div>               
                     <div class="projectDetails">
                         <h3>Delicious</h3>
-                        <h4>HTML, CSS, Sass </h4>
+                        <h4>HTML, CSS </h4>
                         <p>Multi-page PSD conversion, fully responsive across all devices. This restaurant website is well-tested, pixel
                             perfect based on client brief and design guide. </p>
                         <button><a href="https://jasminelo-delicious.netlify.app/" target=”_blank”>view live</a> </button>

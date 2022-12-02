@@ -5,10 +5,16 @@
         }
     .skillList{
         display: flex;
-        justify-content: space-between;
+        flex-wrap:wrap;
+        justify-content: center;
+
         i{
             font-size:4rem;
             color:hwb(18 7% 24%);
         }
+        .skillIcon{
+            margin-left: 20px;
+            margin-right:20px;
+            min-width:75px;}
     }
 }
