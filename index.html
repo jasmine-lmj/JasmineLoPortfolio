@@ -19,24 +19,19 @@
     <a href="#aboutMe" class="skipLink">Skip to the main content.</a>
     <header>
         <div id="home" class="wrapper home">
-            <nav>
-                <div class="menuIcon hamburger">
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
-                </div>
+            <nav class="navBar">
                 <ul class="navContainer">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#aboutMe">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
                 <div class="slideOutNav">
-                    <button id="menuClose">
-                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                <path d="m18 6-12 12" />
-                                <path d="m6 6 12 12" />
-                            </g>
-                        </svg>
+                    <button id="menuClose" class="menuClose">
+                        <i class="fa-solid fa-xmark"></i>
                     </button>
                     <ul class="slideUl">
                         <li><a href="#home">Home</a></li>

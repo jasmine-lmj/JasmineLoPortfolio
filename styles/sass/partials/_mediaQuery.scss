@@ -53,34 +53,56 @@
     }
 
     header{
-        .menuIcon{
+        .hamburger{
             display:flex;
             background-color: transparent;
             color:antiquewhite;
             font-size: 2.5rem;
-            justify-content: flex-end;
+            position:absolute;
+            right:0px;
         }
+
         .slideOutNav {
             background-color: #F1F3EC;
             color: #28536b;
-            height: 30vh;
+            height: 25vh;
             position: fixed;
             top: 0;
+            right:-250px;
             padding: 20px;
-            width: 20%;
-            max-width: 200px;
-            font-weight: bold;
+            min-width: 200px;
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
             z-index: 20;
-            right:-250px;
-            top: -250px;
-            transition: 0.3s;
+            transition: 0.2s;
+            
 
-            // this is for js , to show the slideOutNav
             &.open {
-                top: 0;
                 right:0;
+            }
+
+            .menuClose{
+                text-align: center;
+                width:40px;
+                height:40px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                .fa-xmark{
+                    font-size:1.5rem;
+                }
+            }
+
+            .slideUl{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li{
+                    padding-top:10px;
+                    padding-bottom: 1px;
+                }
             }
         }
         .navContainer{

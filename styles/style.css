@@ -394,7 +394,7 @@ header .home {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-header .menuIcon {
+header .hamburger {
   display: none;
 }
 header .navContainer {
@@ -644,27 +644,25 @@ footer {
   h3 {
     font-size: 3rem;
   }
-  header .menuIcon {
+  header .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background-color: transparent;
     color: antiquewhite;
     font-size: 2.5rem;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    position: absolute;
+    right: 0px;
   }
   header .slideOutNav {
     background-color: #F1F3EC;
     color: #28536b;
-    height: 30vh;
+    height: 25vh;
     position: fixed;
     top: 0;
+    right: -250px;
     padding: 20px;
-    width: 20%;
-    max-width: 200px;
-    font-weight: bold;
+    min-width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -672,15 +670,50 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 20;
-    right: -250px;
-    top: -250px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   header .slideOutNav.open {
-    top: 0;
     right: 0;
+  }
+  header .slideOutNav .menuClose {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .slideOutNav .menuClose .fa-xmark {
+    font-size: 1.5rem;
+  }
+  header .slideOutNav .slideUl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .slideOutNav .slideUl li {
+    padding-top: 10px;
+    padding-bottom: 1px;
   }
   header .navContainer {
     display: none;
