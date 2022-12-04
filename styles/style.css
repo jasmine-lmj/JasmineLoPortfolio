@@ -302,6 +302,7 @@ h1 {
 
 h2 {
   font-size: 5rem;
+  color: #28536b;
 }
 
 h3 {
@@ -394,9 +395,6 @@ header .home {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-header .hamburger {
-  display: none;
-}
 header .navContainer {
   width: 70%;
   margin: 0 auto;
@@ -407,6 +405,7 @@ header .navContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header .hamburger,
 header .slideOutNav {
   display: none;
 }
@@ -429,10 +428,7 @@ header .title .titleButton {
 }
 
 .skills {
-  background-color: hsl(189deg, 33%, 92%);
-}
-.skills h2 {
-  color: #212E4E;
+  background-color: #EDF1F2;
 }
 .skills .skillList {
   display: -webkit-box;
@@ -446,7 +442,7 @@ header .title .titleButton {
 }
 .skills .skillList i {
   font-size: 4rem;
-  color: hwb(18 7% 24%);
+  color: #c24712;
 }
 .skills .skillList .skillIcon {
   margin-left: 20px;
@@ -458,7 +454,6 @@ header .title .titleButton {
   background-color: #F1F3EC;
 }
 .contact .social,
-.contact h2,
 .contact p,
 .contact label {
   color: #28536b;
@@ -527,8 +522,7 @@ header .title .titleButton {
 .contact .form input:focus, .contact .form input:hover,
 .contact .form .textArea:focus,
 .contact .form .textArea:hover {
-  -webkit-box-shadow: 0 0 5px #e85415;
-          box-shadow: 0 0 5px #e85415;
+  outline: 2px solid #e85415;
 }
 .contact .form .formSubmit {
   width: 25%;
@@ -538,9 +532,6 @@ header .title .titleButton {
 
 .aboutMe {
   background-color: #F1F3EC;
-}
-.aboutMe h2 {
-  color: #F38779;
 }
 .aboutMe img {
   border-radius: 50%;
@@ -554,15 +545,14 @@ header .title .titleButton {
 }
 .aboutMe .linkToContact {
   font-family: "skranji";
-  color: #28536b;
+  color: #c24712;
   font-size: 1.2rem;
 }
 
 .projects {
-  background-color: #F6F0ED;
+  background-color: #f4f6f9;
 }
 .projects h2 {
-  color: #2F4568;
   padding-bottom: 2rem;
 }
 .projects .project {

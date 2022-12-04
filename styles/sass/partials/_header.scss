@@ -20,10 +20,6 @@ header{
 
     }
 
-    .hamburger{
-        display:none;
-    }
-
     .navContainer{
         width:70%;
         margin:0 auto;
@@ -31,10 +27,12 @@ header{
         justify-content: space-between;
     }
 
+    .hamburger,
     .slideOutNav{
         display:none;
         
     }    
+    
     .title{
         min-height:100vh;
         display:flex;

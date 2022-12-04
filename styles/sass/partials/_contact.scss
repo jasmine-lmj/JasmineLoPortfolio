@@ -1,9 +1,6 @@
-
-
 .contact{
     background-color: #F1F3EC;
     .social,
-    h2,
     p,
     label{
         color: #28536b;
@@ -42,8 +39,6 @@
         
         label{
             font-family: "Amiko";
-            
-        
         }
         input{
             margin-bottom: 0.5rem;
@@ -59,7 +54,7 @@
             outline:none;
             &:focus,
             &:hover{
-            box-shadow: 0 0 5px #e85415;
+            outline:2px solid #e85415;
             }
         }
 
