@@ -1,8 +1,6 @@
 .skills{
-    background-color: hsl(189, 33%, 92%);
-    h2 {
-            color: #212E4E;
-        }
+    background-color: #EDF1F2;
+    
     .skillList{
         display: flex;
         flex-wrap:wrap;
@@ -10,7 +8,7 @@
 
         i{
             font-size:4rem;
-            color:hwb(18 7% 24%);
+            color:#c24712;
         }
         .skillIcon{
             margin-left: 20px;
