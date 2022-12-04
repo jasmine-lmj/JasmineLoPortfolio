@@ -527,8 +527,7 @@ header .title .titleButton {
 .contact .form input:focus, .contact .form input:hover,
 .contact .form .textArea:focus,
 .contact .form .textArea:hover {
-  -webkit-box-shadow: 0 0 5px #e85415;
-          box-shadow: 0 0 5px #e85415;
+  outline: 2px solid #e85415;
 }
 .contact .form .formSubmit {
   width: 25%;
