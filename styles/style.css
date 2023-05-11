@@ -467,7 +467,7 @@ header .title .titleButton {
           justify-content: space-between;
 }
 .contact .socials .social {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
   color: #c24712;
 }
@@ -618,7 +618,7 @@ footer {
     margin-top: 2rem;
   }
   .projects .project .projectImgContainer,
-.projects .project .projectDetails {
+  .projects .project .projectDetails {
     width: 80%;
   }
   .projects .project .projectDetails {
@@ -634,7 +634,7 @@ footer {
     margin-bottom: 0.5rem;
   }
   .contact .contactContainer p,
-.contact .contactContainer .form {
+  .contact .contactContainer .form {
     width: 80%;
   }
 }
@@ -739,5 +739,8 @@ footer {
   }
   header .title {
     min-height: 70vh;
+  }
+  .formSubmit {
+    padding: 10px 20px;
   }
 }
