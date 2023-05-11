@@ -26,10 +26,13 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <!-- hamburgerButton  -->
                 <button class="hamburger">
                     <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
+                <!-- menu -->
                 <div class="slideOutNav">
+                    <!-- menuCloseButton -->
                     <button id="menuClose" class="menuClose">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
@@ -116,7 +119,22 @@
                         <button><a href="https://github.com/jasmine-lmj/project1_delicious" target=”_blank” >view code</a> </button>
                     </div>
                 </div>
-                <div class="project project2">  
+                <div class="project project2">
+                    <div class="projectDetails">
+                        <h3>Giphy Sentiment</h3>
+                        <h4>React, HTML, CSS, Javascript, API, Paired Programming </h4>
+                        <p>A fun application to capture and represent the user's emotional states using gifs. </p>
+                        <button><a href="https://giphy-sentiment-main.netlify.app/" target=”_blank”>view live</a> </button>
+                        <button><a href="https://github.com/orgs/Giphy-Sentiment-App/repositories" target=”_blank”>view code</a> </button>
+                    </div>
+                    <div class="projectImgContainer">
+                        <img src="./assets/project2.png" alt="project2 screenshot">
+                    </div>               
+                </div>
+                <div class="project project3">  
+                    <div class="projectImgContainer">
+                        <img src="./assets/project3.png" alt="project3 screenshot">
+                    </div>
                     <div class="projectDetails">
                         <h3>Ugly Pokemon</h3>
                         <h4>HTML, CSS, Javascript, API, Paired Programming</h4>
@@ -125,28 +143,14 @@
                         <button><a href="https://ugly-pokemon.netlify.app/" target=”_blank” >view live</a> </button>
                         <button><a href="https://github.com/UglyPokemon/UglyPokemon" target="_blank">view code</a> </button>
                     </div>
-                    <div class="projectImgContainer">
-                        <img src="./assets/project2.png" alt="project2 screenshot">
-                    </div>
-                </div>
-                <div class="project project3">
-                    <div class="projectImgContainer">
-                        <img src="./assets/project1.png" alt="project3 screenshot">
-                    </div>               
-                    <div class="projectDetails">
-                        <h3>Delicious</h3>
-                        <h4>HTML, CSS </h4>
-                        <p>Multi-page PSD conversion, fully responsive across all devices. This restaurant website is well-tested, pixel
-                            perfect based on client brief and design guide. </p>
-                        <button><a href="https://jasminelo-delicious.netlify.app/" target=”_blank”>view live</a> </button>
-                        <button><a href="https://github.com/jasmine-lmj/project1_delicious" target=”_blank”>view code</a> </button>
-                    </div>
+                    
                 </div>
             </div>
         </section>
         <section id="contact" class="contact">
             <div class="wrapper contactContainer">
                 <h2>get in touch</h2>
+                <p class="message">I'm always excited to meet new people and learn new things (no doubt an extrovert!) If you would like to work together, grab a coffee or have any questions about me, shoot me a message!</p> 
                 <ul class="socials">
                     <li>
                         <a href="https://www.linkedin.com/in/jasminelomeiju/" target="blank" title="Find me on LinkedIn">
@@ -165,8 +169,7 @@
                     </li>
                     
                 </ul>
-                <p class="message">I'm always excited to meet new people and learn new things (no doubt an extrovert!) If you would like to work together, grab a coffee or have any questions about me, shoot me a message!</p> 
-                <div class="form">
+                <!-- <div class="form">
                     <label for="name">Name</label>
                     <input type="text" id="name">
                     <label for="email">Email Address</label>
@@ -174,12 +177,12 @@
                     <label for="message">Message</label>
                     <textarea class="textArea" name="message" id="message" cols="30" rows="10"></textarea>
                     <input type="submit" value="send" class="formSubmit">
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
     <footer>
-        <div class="wrapper">Designed and coded by Jasmine Lo</div>
+        <div class="wrapper">Designed and coded by Jasmine Lo </div>
     </footer>
 </body>
 </html> 
